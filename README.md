@@ -60,6 +60,7 @@ y = df['Churn']
 
 
 
+
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 model = DecisionTreeClassifier(criterion='entropy', max_depth=3, random_state=42)
 model.fit(X_train, y_train)
@@ -70,9 +71,13 @@ y_pred = model.predict(X_test)
 
 
 
+
+
 print("Confusion Matrix:\n", confusion_matrix(y_test, y_pred))
 print("\nClassification Report:\n", classification_report(y_test, y_pred))
 print("Accuracy:", accuracy_score(y_test, y_pred))
+
+
 
 
 
@@ -94,9 +99,16 @@ plt.show()
 
 
 
+
+
+
 new_emp = [[0.4, 0.6, 3, 150, 2]]  
 prediction = model.predict(new_emp)
 print("\nNew Employee Prediction:")
+
+
+
+
 
 
 
