@@ -20,7 +20,7 @@ Program to implement the Decision Tree Classifier Model for Predicting Employee 
 Developed by: Ganananth H
 RegisterNumber:  25010984
 */
-```
+
 
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -64,6 +64,7 @@ if prediction[0] == 1:
 else:
     print(" Employee is likely to STAY.")
 
+```
 ## Output:
 
 <img width="782" height="600" alt="Screenshot 2026-03-19 202348" src="https://github.com/user-attachments/assets/ea305ec0-9e0f-40ad-a12e-e05d3d57d7cf" />
