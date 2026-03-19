@@ -83,8 +83,14 @@ else:
 ```
 
 ## Output:
+
+
 <img width="782" height="600" alt="Screenshot 2026-03-19 202348" src="https://github.com/user-attachments/assets/ea305ec0-9e0f-40ad-a12e-e05d3d57d7cf" />
+
+
 <img width="964" height="384" alt="Screenshot 2026-03-19 202355" src="https://github.com/user-attachments/assets/05b82ddb-9290-49d0-942a-f7b71696d5da" />
+
+
 <img width="1469" height="682" alt="Screenshot 2026-03-19 202411" src="https://github.com/user-attachments/assets/fd85309c-0100-45d2-8b2c-a1e6c3846caf" />
 
 ## Result:
