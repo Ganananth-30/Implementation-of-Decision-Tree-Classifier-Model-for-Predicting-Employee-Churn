@@ -27,6 +27,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier, plot_tree
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
 import matplotlib.pyplot as plt
+
+
 data = {
     'Satisfaction_Level': [0.8, 0.4, 0.9, 0.3, 0.7, 0.2, 0.85, 0.5, 0.95, 0.45],
     'Last_Evaluation': [0.9, 0.6, 0.8, 0.5, 0.75, 0.4, 0.88, 0.7, 0.95, 0.65],
@@ -35,6 +37,8 @@ data = {
     'Years_at_Company': [3, 2, 4, 1, 3, 1, 4, 2, 5, 2],
     'Churn': [0, 1, 0, 1, 0, 1, 0, 1, 0, 1]
 }
+
+
 df = pd.DataFrame(data)
 print("Employee Data:\n", df, "\n")
 X = df[['Satisfaction_Level', 'Last_Evaluation', 'Number_of_Projects',
@@ -47,6 +51,8 @@ y_pred = model.predict(X_test)
 print("Confusion Matrix:\n", confusion_matrix(y_test, y_pred))
 print("\nClassification Report:\n", classification_report(y_test, y_pred))
 print("Accuracy:", accuracy_score(y_test, y_pred))
+
+
 plt.figure(figsize=(12, 6))
 plot_tree(model,
           feature_names=X.columns,
@@ -56,6 +62,9 @@ plot_tree(model,
           fontsize=10)
 plt.title("Decision Tree for Employee Churn Prediction")
 plt.show()
+
+
+
 new_emp = [[0.4, 0.6, 3, 150, 2]]  
 prediction = model.predict(new_emp)
 print("\nNew Employee Prediction:")
