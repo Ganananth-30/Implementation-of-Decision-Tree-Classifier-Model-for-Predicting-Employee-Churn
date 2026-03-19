@@ -22,11 +22,15 @@ RegisterNumber:  25010984
 */
 
 
+
+
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier, plot_tree
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
 import matplotlib.pyplot as plt
+
+
 
 
 
@@ -43,11 +47,15 @@ data = {
 
 
 
+
+
 df = pd.DataFrame(data)
 print("Employee Data:\n", df, "\n")
 X = df[['Satisfaction_Level', 'Last_Evaluation', 'Number_of_Projects',
         'Average_Monthly_Hours', 'Years_at_Company']]
 y = df['Churn']
+
+
 
 
 
@@ -60,9 +68,13 @@ y_pred = model.predict(X_test)
 
 
 
+
+
 print("Confusion Matrix:\n", confusion_matrix(y_test, y_pred))
 print("\nClassification Report:\n", classification_report(y_test, y_pred))
 print("Accuracy:", accuracy_score(y_test, y_pred))
+
+
 
 
 
@@ -80,9 +92,15 @@ plt.show()
 
 
 
+
+
 new_emp = [[0.4, 0.6, 3, 150, 2]]  
 prediction = model.predict(new_emp)
 print("\nNew Employee Prediction:")
+
+
+
+
 
 
 
