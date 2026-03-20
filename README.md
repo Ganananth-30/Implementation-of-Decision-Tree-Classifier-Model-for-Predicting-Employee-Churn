@@ -82,9 +82,7 @@ else:
 
 <img width="964" height="384" alt="Screenshot 2026-03-19 202355" src="https://github.com/user-attachments/assets/05b82ddb-9290-49d0-942a-f7b71696d5da" />
 
-<img width="1469" height="682" alt="Screenshot 2026-03-19 202411" src="https://github.com/user-attachments/assets/fd85309c-0100-45d2-8b2c-a1e6c3846caf"
-
- />
+<img width="1469" height="682" alt="Screenshot 2026-03-19 202411" src="https://github.com/user-attachments/assets/fd85309c-0100-45d2-8b2c-a1e6c3846caf"/>
 
 ## Result:
 Thus the program to implement the  Decision Tree Classifier Model for Predicting Employee Churn is written and verified using python programming.
